@@ -15,6 +15,7 @@ import { FoodPage } from '../pages/todo/food/food';
 import { AdventuresPage } from '../pages/todo/adventures/adventures';
 import { KeepingFitPage } from '../pages/todo/keeping-fit/keeping-fit';
 import { PaymentPage } from '../pages/payment/payment';
+import { UserReportPage } from '../pages/user-report/user-report'
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { PaymentPage } from '../pages/payment/payment';
     FoodPage,
     AdventuresPage,
     KeepingFitPage,
-    PaymentPage
+    PaymentPage,
+    UserReportPage
 
   ],
   imports: [
@@ -47,7 +49,8 @@ import { PaymentPage } from '../pages/payment/payment';
     FoodPage,
     AdventuresPage,
     KeepingFitPage,
-    PaymentPage
+    PaymentPage,
+    UserReportPage
   ],
   providers: [
     StatusBar,

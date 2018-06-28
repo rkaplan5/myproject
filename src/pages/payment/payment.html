@@ -5,21 +5,26 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-	
-		<title>Simple Checkout Form</title>
-		
+	<ion-navbar>
+		<ion-title>
+			<p>Payment</p>
+		</ion-title>
+	</ion-navbar>
 </ion-header>
 
-<ion-content> 
+<ion-content>
 
-		<form stripe-form="stripeCallback" name="form">
-			<input ng-model="number" placeholder="Card Number" payments-format="card"
-			       payments-validate="card" name="card" />
-			<input ng-model="expiry" placeholder="Expiration" payments-format="expiry"
-			       payments-validate="expiry" name="expiry" />
-			<input ng-model="cvc" placeholder="CVC" payments-format="cvc"
-			       payments-validate="cvc" name="cvc" />
-			<button type="submit">Submit</button>
-		</form>
+	<p>Please enter your details below to complete transaction</p>
 
-  </ion-content>
+	<form stripe-form="stripeCallback" name="form">
+		<input ng-model="number" placeholder="Card Number" payments-format="card" payments-validate="card" name="card" />
+		<input ng-model="expiry" placeholder="Expiration" payments-format="expiry" payments-validate="expiry" name="expiry" />
+		<input ng-model="cvc" placeholder="CVC" payments-format="cvc" payments-validate="cvc" name="cvc" />
+		<button type="submit">Submit</button>
+	</form>
+
+	<div>
+		<button ion-button (click)="NavigateToUserReport()">View Receipts</button>
+	</div>
+
+</ion-content>

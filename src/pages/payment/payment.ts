@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { UserReportPage } from '../user-report/user-report';
 
 /**
  * Generated class for the PaymentPage page.
@@ -22,4 +23,8 @@ export class PaymentPage {
     console.log('ionViewDidLoad PaymentPage');
   }
   
+  NavigateToUserReport() {
+    // other stuff...
+    this.navCtrl.push(UserReportPage);
+  }
 }
