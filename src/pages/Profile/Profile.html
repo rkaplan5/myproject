@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <p>Profile</p>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <div>
+    <ion-list>
+      <ion-item>
+        <p>Welcome to your profile</p>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div>
+    <ion-item>
+      <ion-img width="200" height="200" src="https://scontent-jnb1-1.xx.fbcdn.net/v/t1.0-9/11252857_10153001882525687_6854546403840273847_n.jpg?_nc_cat=0&oh=048fc3330e86d158f2b8345eb82e522c&oe=5BAA94A8"></ion-img>
+
+    </ion-item>
+  </div>
+  <div>
+    <ion-item>
+      <ion-list>
+        <p>Name</p>
+        <p>Country of origin</p>
+        <br>
+        <p>What do you feel like doing today?</p>
+        <br>
+        <ion-list>
+            <button ion-item (click)="NavigateToFoodPage()">
+              Food
+            </button>  
+        </ion-list>
+        <ion-list>
+            <button ion-item (click)="NavigateToKeepingFitPage()">
+              Keeping Fit
+            </button>  
+        </ion-list>
+        <ion-list>
+            <button ion-item (click)="NavigateToAdventuresPage()">
+              Adventures
+            </button>  
+        </ion-list>
+
+      </ion-list>
+    </ion-item>
+  </div>
+
+  <div>
+    <button ion-button (click)="NavigateToEndPage()">Log out</button>
+  </div>
+
+</ion-content>

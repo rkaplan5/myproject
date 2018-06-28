@@ -1,0 +1,25 @@
+<!--
+  Generated template for the PaymentPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+	
+		<title>Simple Checkout Form</title>
+		
+</ion-header>
+
+<ion-content> 
+
+		<form stripe-form="stripeCallback" name="form">
+			<input ng-model="number" placeholder="Card Number" payments-format="card"
+			       payments-validate="card" name="card" />
+			<input ng-model="expiry" placeholder="Expiration" payments-format="expiry"
+			       payments-validate="expiry" name="expiry" />
+			<input ng-model="cvc" placeholder="CVC" payments-format="cvc"
+			       payments-validate="cvc" name="cvc" />
+			<button type="submit">Submit</button>
+		</form>
+
+  </ion-content>

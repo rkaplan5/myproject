@@ -1,35 +1,30 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      <p><span style="font-size:100%;color:red;">&hearts;</span>IX App<span style="font-size:100%;color:red;">&hearts;</span>
+      <p>
+        <span style="font-size:100%;color:red;">&hearts;</span>I Love Cape Town
+        <span style="font-size:100%;color:red;">&hearts;</span>
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-
 <ion-content>
-  
-<ion-list>
-  <ion-item>
-    <ion-label floating>Username</ion-label>
-    <ion-input type="text"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label floating>Password</ion-label>
-    <ion-input type="password"></ion-input>
-  </ion-item>
-</ion-list>
 
-<div>
-<button ion-button>Log In</button>
-</div>
+  <div>
+    <button ion-button (click)="NavigateToLogInPage()">I'm a return user</button>
+  </div>
+  <div>
+    <button ion-button (click)="NavigateToReg()">I dont have an account</button>
+  </div>
 
-<footer>
+  <footer padding>
     <ion-list>
-     <p><a href="#"><I>create new account</I></a></p>
-     <p><a href="#"><I>Terms, Conditions and Privacy Agreement</I></a></p>
+      <p>
+        <a href="#">
+          <I>terms and conditions</I>
+        </a>
+      </p>
     </ion-list>
   </footer>
 
 </ion-content>
-

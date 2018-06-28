@@ -1,0 +1,16 @@
+page-adventures {
+    body {
+        background: 
+    url(https://www.facebook.com/photo.php?fbid=10154346639970687&set=a.10154335140690687.1073741877.502775686&type=3&size=960%2C720) ;
+        background-attachment:fixed;
+        background-position: center;
+    }
+    
+    body .view-container.tab-content {
+      background-color: transparent;
+    }
+    
+    body .pane, .menu, .view, .list, .item       {
+        background: transparent;
+    }
+}
