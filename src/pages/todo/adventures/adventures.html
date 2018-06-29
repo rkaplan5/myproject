@@ -14,33 +14,18 @@
 
 
 <ion-content padding>
+
+    <div *ngFor="let activity of activities">
+        <p><b>{{activity.name}}</b></p>
+        <p>{{activity.note}}</p>
+        <p>{{activity.note2}}</p>
+        <p><a href="{{activity.link}}">click here for website</a>
+        </p>
+    </div>
+
 <ion-list>
-    <p><b>Table Mountain Cable Car</b></p>
-    <p>Tafelberg Rd, Gardens, Cape Town, 8001</p>
-    <p>
-      <a href="http://www.tablemountain.net/ ">click here for website</a>
-    </p>
-    <br>
-    <p><b>Kirstenbosch</b></p>
-    <p>Rhodes Dr, Newlands, Cape Town, 7735</p>
-    <p>
-      <a href="http://www.sanbi.org/gardens/kirstenbosch">click here for website</a>
-    </p>
-    <br>
-    <p><b>Horse Riding</b></p>
-    <p> Sleepy Hollow Lane, Noordhoek, Cape Town, 7979 <br>
-        2hrs R480<br>  
-        Need to arrive 45 mins before ride (or can fill in online forms)</p>
-    <p>
-      <a href="http://www.sleepyhollowhorseriding.com/beach-rides/">click here for website</a>
-    </p>
-    <br>
-    <p><b>Seal Snorkelling</b></p>
-    <p>Hout Bay</p>
-    <p>
-      <a href="http://sealsnorkeling.com/">click here for website</a>
-    </p>
-    <br>
+
+  <!--need to add all these-->
     <p><b>Boulders Beach</b>see the penguins</p>
     <p>Simons Town<br>
       R65

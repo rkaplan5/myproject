@@ -14,30 +14,19 @@
 
 <ion-content padding>
 
+    <div *ngFor="let activity of activities">
+        <p><b>{{activity.name}}</b></p>
+        <p>{{activity.note}}</p>
+        <p>{{activity.note2}}</p>
+        <p><a href="{{activity.link}}">click here for website</a>
+        </p>
+        <br>
+    </div>
+
   <ion-list>
-    <p><b>The Bungalow</b></p>
-    <p>Clifton Beach</p>
-    <p>
-      <a href="https://www.thebungalow.co.za/">click here for website</a>
-    </p>
-    <br>
-    <p><b>Moyo African Meat</b></p>
-    <p>
-      <a href="http://www.moyo.co.za/moyo-kirstenbosch/">click here for website</a>
-    </p>
-    <br>
-    <p><b>Brass Bel</b></p>
-    <p>Kalk Bay</p>
-    <p>
-      <a href="http://www.brassbell.co.za/wmenu.php">click here for website</a>
-    </p>
-    <br>
-    <p><b>Groot Constantia</b> wine tasting </p>
-    <p>Price per person for wine tasting - R75</p>
-    <p>
-      <a href="https://www.grootconstantia.co.za/the-experience/wine-tasting/?id=67">click here for website</a>
-    </p>
-    <br>
+  
+<!--Need to copy all of these to the vars on the .ts page-->
+
     <p><b>Nelsons Eye</b> steak house</p>
     <p>Hof Street in Gardens</p>
     <p>
@@ -86,5 +75,6 @@
       </p>
 
   </ion-list>
+-->
 
 </ion-content>

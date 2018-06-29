@@ -16,6 +16,7 @@ import { AdventuresPage } from '../pages/todo/adventures/adventures';
 import { KeepingFitPage } from '../pages/todo/keeping-fit/keeping-fit';
 import { PaymentPage } from '../pages/payment/payment';
 import { UserReportPage } from '../pages/user-report/user-report'
+import { WorkoutsPage } from '../pages/workouts/workouts'
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { UserReportPage } from '../pages/user-report/user-report'
     AdventuresPage,
     KeepingFitPage,
     PaymentPage,
-    UserReportPage
+    UserReportPage,
+    WorkoutsPage
 
   ],
   imports: [
@@ -50,7 +52,8 @@ import { UserReportPage } from '../pages/user-report/user-report'
     AdventuresPage,
     KeepingFitPage,
     PaymentPage,
-    UserReportPage
+    UserReportPage,
+    WorkoutsPage
   ],
   providers: [
     StatusBar,
