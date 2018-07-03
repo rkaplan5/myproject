@@ -8,9 +8,13 @@ import { Profile } from '../Profile/Profile';
 })
 export class LogInPage {
 
+  public username: string;
+  public password: string;
+
   constructor(public navCtrl: NavController) {}
 
   NavigateToProfile() {
     this.navCtrl.push(Profile);
   }
   }
+  
