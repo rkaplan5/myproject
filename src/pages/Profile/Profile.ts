@@ -12,6 +12,7 @@ import { KeepingFitPage } from '../todo/keeping-fit/keeping-fit';
 export class Profile {
 
   constructor(public navCtrl: NavController) { }
+  
 
   NavigateToEndPage() {
     this.navCtrl.push(EndPage);

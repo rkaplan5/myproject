@@ -19,18 +19,18 @@
   <div>
       <ion-list>
           <ion-item>
-              <ion-label floating>Username</ion-label>
+              <ion-label floating>username</ion-label>
               <ion-input [(ngModel)]="username" type="text"></ion-input>
           </ion-item>
           <ion-item>
-              <ion-label floating>Password</ion-label>
+              <ion-label floating>password</ion-label>
               <ion-input type="password"></ion-input>
           </ion-item>
       </ion-list>
   </div>
-
-  <div padding>
-      <button ion-button (click)="NavigateToProfile()">Log In</button>
+<!--make button navogate to log in -->
+  <div padding> 
+      <button ion-button (click)="login()">Log In</button>
   </div>
 
 </ion-content>

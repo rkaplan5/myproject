@@ -1,3 +1,5 @@
+<!--the index page holds all the information for the whole app-->
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -45,5 +47,14 @@
   <!-- The main bundle js is generated during the build process -->
   <script src="build/main.js"></script>
 
+
+<!--payment coding code from Aligator website-->
+
+  <script src="https://js.stripe.com/v3/"></script>
+  <script type="text/javascript">
+    var stripe = Stripe('pk_test_smZO8xj5qmkiNgKVPcl6iAyA'); 
+    var elements = stripe.elements();
+  </script>
 </body>
+
 </html>

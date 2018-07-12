@@ -13,10 +13,19 @@
 <div>I have made this app as I love to adventure around Cape Town but I find navigating all the review sites quite confusing and so have compiled a list of all my favourite places to help others enjoy the city as much as I do.</div>
   <br>
 <div>
-    <button ion-button (click)="NavigateToLogInPage()">I'm a return user</button>
+    <button ion-button (click)="NavigateToLogInPage()">I'm a return user</button> <!--this needs a function in the .ts-->
   </div>
   <div>
     <button ion-button (click)="NavigateToReg()">I dont have an account</button>
+  </div>
+
+  <div>
+  <!-- this section is for intergrating back to (page/home.ts)-->
+    <ion-list>
+      <ion-item *ngFor="let post of posts">
+        <img [src]="post.data.url" />
+      </ion-item>
+    </ion-list>
   </div>
 
   <footer padding>
