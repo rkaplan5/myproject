@@ -33,12 +33,12 @@ import { FormsModule } from '@angular/forms';
     KeepingFitPage,
     PaymentPage,
     UserReportPage,
-    WorkoutsPage
-    FormsModule
+    WorkoutsPage,
     
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     IonicModule.forRoot(MyApp),
     HttpModule, // for intergating (page/home.ts)
   ],

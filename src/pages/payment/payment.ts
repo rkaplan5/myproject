@@ -12,8 +12,7 @@ import { NgForm } from '@angular/forms';
 // import { stripe } from 'stripe' new style if doesnt work, try old style below. 
 declare var Stripe: any;
 declare var elements: any;
-var stripe = Stripe('pk_test_smZO8xj5qmkiNgKVPcl6iAyA');
-var elements = stripe.elements();
+
 // will need to link this to the index page
 
 
@@ -37,10 +36,16 @@ export class PaymentPage implements AfterViewInit, OnDestroy {
   cardHandler = this.onChange.bind(this);
   error: string;
 
+  stripe: any;
+  elements: any;
+
   constructor(
     public navCtrl: NavController, public navParams: NavParams,
     private cd: ChangeDetectorRef
-  ) {}
+  ) {
+    this.stripe = Stripe('pk_test_smZO8xj5qmkiNgKVPcl6iAyA');
+    this.elements = this.stripe.elements();
+  }
 
   ngAfterViewInit() {
     const style = {
@@ -76,7 +81,7 @@ export class PaymentPage implements AfterViewInit, OnDestroy {
   }
 
   async onSubmit(form: NgForm) {
-    const { token, error } = await stripe.createToken(this.card);
+    const { token, error } = await this.stripe.createToken(this.card);
 
     if (error) {
       console.log('Something is wrong:', error);
