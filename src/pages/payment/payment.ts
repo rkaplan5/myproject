@@ -9,8 +9,9 @@ import {
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { UserReportPage } from '../user-report/user-report';
 import { NgForm } from '@angular/forms';
-declare var Stripe;
 // import { stripe } from 'stripe' new style if doesnt work, try old style below. 
+declare var Stripe: any;
+declare var elements: any;
 var stripe = Stripe('pk_test_smZO8xj5qmkiNgKVPcl6iAyA');
 var elements = stripe.elements();
 // will need to link this to the index page
