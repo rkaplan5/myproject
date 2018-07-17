@@ -13,8 +13,9 @@ export class Profile {
 
   constructor(public navCtrl: NavController) { }
   
-
+// need to make the log out funtional 
   NavigateToEndPage() {
+    localStorage.removeItem("TOKEN")
     this.navCtrl.push(EndPage);
   }
 
