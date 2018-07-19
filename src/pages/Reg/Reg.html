@@ -22,21 +22,21 @@
         <ion-list>
             <ion-item>
                 <ion-label floating>username</ion-label>
-                <ion-input type="username"></ion-input>
+                <ion-input type="username" [(ngModel)]="username"></ion-input> <!--need ng to pass info to .ts -->
             </ion-item>
             <ion-item>
                 <ion-label floating>password</ion-label>
-                <ion-input type="password"></ion-input>
+                <ion-input type="password" [(ngModel)]="password"></ion-input> <!--without passing to .ts its not live data -->
             </ion-item>
             <ion-item>
                 <ion-label floating>email</ion-label>
-                <ion-input type="email"></ion-input>
+                <ion-input type="email" [(ngModel)]="email"></ion-input> <!-- once in .ts it can be passed to the database-->
             </ion-item>
         </ion-list>
     </div>
     
     <div>
-            <button ion-button (click)="NavigateToProfile()">Log In</button>
+            <button ion-button (click)="registration()">Log In</button>
         </div>
 
     <footer>
