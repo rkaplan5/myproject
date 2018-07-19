@@ -6,7 +6,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding class="bg-image"> <!--background image added to the ion content also need the scss-->
 
   <div>
     <ion-list>
@@ -16,7 +16,39 @@
     </ion-list>
   </div>
 
-  <!-- make camera work -->
+  <!-- google maps -->
+  <h1>Google maps</h1>
+
+  <!--map start location-->
+  <agm-map 
+  [latitude]="userLocation.lat"
+  [longitude]="userLocation.lng"
+  (mapClick)="mapClicked($event)">
+
+  <!--pulling map from array shelter-->
+  <agm-marker 
+      *ngFor="let marker of markers; let i = index"
+      (markerClick)="clickedMarker(m.label, i)"
+      [latitude]="marker.lat"
+      [longitude]="marker.lng"
+      [label]="marker.label">
+      
+    <agm-info-window>
+      <strong>InfoWindow content</strong>
+    </agm-info-window>
+    
+  </agm-marker>
+  
+  <agm-circle [latitude]="lat + 0.3" [longitude]="lng" 
+      [radius]="5000"
+      [fillColor]="'red'"
+      [circleDraggable]="true"
+      [editable]="true">
+  </agm-circle>
+
+</agm-map>
+
+  <!--google maps ends -->
 
   <div>
     <ion-item>
@@ -25,7 +57,7 @@
     </ion-item>
   </div>
   <div>
-    <ion-item>
+    <ion-item class="item item-trns text-center"> <!-- making the item background clear also neds to do the scss-->
       <ion-list>
         <p>Name</p>
         <p>Country of origin</p>

@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { ErrorHandler, NgModule } from '@angular/core';
+import { ErrorHandler, NgModule, ApplicationRef } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -18,6 +18,8 @@ import { UserReportPage } from '../pages/user-report/user-report'
 import { WorkoutsPage } from '../pages/workouts/workouts'
 import { HttpModule } from '@angular/http'; // for intergrating 
 import { FormsModule } from '@angular/forms';
+
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,11 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     IonicModule.forRoot(MyApp),
     HttpModule, // for intergating (page/home.ts)
+    //google maps
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAOcIU3Glf45SIHCXfHS5fJTdtER214WJI'
+    })
+  
   ],
   bootstrap: [IonicApp],
   entryComponents: [

@@ -19,15 +19,6 @@
     <button ion-button (click)="NavigateToReg()">I dont have an account</button>
   </div>
 
-  <div>
-  <!-- this section is for intergrating back to (page/home.ts)-->
-    <ion-list>
-      <ion-item *ngFor="let post of posts">
-        <img [src]="post.data.url" />
-      </ion-item>
-    </ion-list>
-  </div>
-
   <footer padding>
     <ion-list>
       <p>
@@ -37,5 +28,14 @@
       </p>
     </ion-list>
   </footer>
+
+  <div>
+    <!-- this section is for intergrating back to (page/home.ts)-->
+      <ion-list>
+        <ion-item *ngFor="let post of posts">
+          <img [src]="post.data.url" />
+        </ion-item>
+      </ion-list>
+    </div>
 
 </ion-content>

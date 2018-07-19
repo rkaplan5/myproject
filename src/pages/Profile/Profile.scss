@@ -3,3 +3,21 @@ page-profile {
         padding-left: 30px;
     }
 }
+
+agm-map {
+    height: 400px;
+}
+
+// background image 
+.bg-image{
+    background-image: url('https://scontent-jnb1-1.xx.fbcdn.net/v/t1.0-9/36901591_10155704843190687_5751892349663838208_n.jpg?_nc_cat=0&oh=991707adbaa3beda117859a75c4be46b&oe=5BC633FF');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+// transparent item 
+.item.item-trns {
+	border-color: rgba(0, 0, 0, 0);
+	background-color: rgba(0, 0, 0, 0);
+	color: white; 
+}
