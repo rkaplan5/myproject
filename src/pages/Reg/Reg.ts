@@ -27,15 +27,17 @@ export class Reg {
        //need to add http in the constructor and on the import list
       this.http
    // post is where and what information is being sent
+   // this is where the backend is using.
         .post("http://localhost:3000/registration", {
           email: this.email,
           username: this.username, 
-          password: this.password
+          password: this.password,
         }).subscribe(
           result => {
             console.log(result.json());
           },
           err => {
+            console.log(err)
           }
         )
         }
@@ -59,6 +61,7 @@ ionViewDidLoad() {
 
     */
 
+    //the below button doesnt exist anymore - the button now goes to register
 NavigateToProfile() {
   this.navCtrl.push(Profile);
 }
