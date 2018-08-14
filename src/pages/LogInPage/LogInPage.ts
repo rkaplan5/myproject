@@ -4,7 +4,7 @@ import { Profile } from '../Profile/Profile';
 import { Http } from '@angular/http';
 
 @Component({
-  selector: 'page-LogInPage',
+  selector: 'LogInPage-home',
   templateUrl: 'LogInPage.html'
 })
 export class LogInPage {
