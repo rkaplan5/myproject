@@ -25,8 +25,8 @@ public flag: boolean;
     // this http links backend project to front end project ie myproject and IX
       this.http
       //need to add http above in the constructor 
-      //when deploying change this to the heroku link
-        .post("https://myproject-ix.herokuapp.com/", {
+      //when deploying change this to the heroku link and add an end point as above.
+        .post("https://myproject-ix.herokuapp.com/login", {
           email: this.email,
           password: this.password
         })
